@@ -1,0 +1,12 @@
+name = "taifex-notify"
+main = "src/worker.js"
+compatibility_date = "2024-11-01"
+
+# secrets 用 `wrangler secret put <name>` 設定，不要寫在這裡：
+#   - TG_BOT_TOKEN
+#   - TG_CHAT_ID
+#   - SHARED_SECRET
+#
+# 非機密的環境變數可在 [vars]：
+[vars]
+ALLOWED_ORIGIN = ""   # 例如 "https://you.github.io" ；留空 = 允許所有 origin (僅靠密碼把關)

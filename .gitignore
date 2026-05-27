@@ -1,0 +1,28 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Frontend build (frontend/.gitignore 已細管，這裡再加保險)
+frontend/dist/
+frontend/node_modules/
+
+# Cloudflare worker
+cloudflare-worker/node_modules/
+cloudflare-worker/.wrangler/
+cloudflare-worker/.dev.vars
+
+# Excel 暫存
+~$*.xlsx

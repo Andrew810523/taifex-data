@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; }
+  body { @apply font-sans antialiased; }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-slate-200 p-5;
+  }
+  .stat-label {
+    @apply text-xs text-slate-500;
+  }
+  .stat-value {
+    @apply text-2xl font-bold tabular-nums;
+  }
+  .stat-delta-up { @apply text-bull tabular-nums; }
+  .stat-delta-down { @apply text-bear tabular-nums; }
+}
